@@ -9,7 +9,7 @@ public class VacationService {
             if (savings >= threshold) {
                 vacationMonths++;
                 savings = savings - expenses;
-                savings = savings /3;
+                savings = savings / 3;
             } else {
                 savings += income - expenses;
             }
