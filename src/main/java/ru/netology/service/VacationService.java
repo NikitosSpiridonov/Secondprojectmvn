@@ -8,7 +8,8 @@ public class VacationService {
         for (int month = 1; month <= 12; month++) {
             if (savings >= threshold) {
                 vacationMonths++;
-                savings = savings - expenses - savings * 2 / 3;
+                savings = savings - expenses;
+                savings = savings /3;
             } else {
                 savings += income - expenses;
             }
